@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/content_layout"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/loading_item_orderid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/back"
+        android:textSize="13sp"
+        android:text="配送单编号："/>
+    <Button
+        android:id="@+id/loading_item_states"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="未扫码"
+        android:layout_weight="3.2"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:background="@mipmap/bg_red"/>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/right_gray"/>
+</LinearLayout>

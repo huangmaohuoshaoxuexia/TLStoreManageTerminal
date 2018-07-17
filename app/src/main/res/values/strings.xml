@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">库管手持</string>
+    <string name="alphabet_and_number">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+</resources>

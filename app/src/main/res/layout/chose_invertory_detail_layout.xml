@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:background="@color/color2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/re_blackground"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title_conetnt"
+                layout="@layout/title_library" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="选盘-货品详情"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="55dp"
+            android:layout_marginTop="-45dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inventory_list_back"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/product_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/back"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/dotted_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="SKU"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/sku_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="批次号"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/no_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="货主"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/cargo_owner_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="规格"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/guige_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="库区"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/kuqu_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="库位"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/kuwei_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="系统数量"
+                                android:textColor="@color/color26"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/numbers_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:textColor="@color/back"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                <!-- 盘点库存 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color32"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:gravity="center_horizontal"
+                            android:text="盘点库存整数/件"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color32"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:textSize="15sp"
+                            android:text="盘点库存零散数/瓶"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/zs_reduce_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:scaleType="fitEnd"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_reduce" />
+
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@mipmap/circle_edit"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+
+                                <EditText
+                                    android:id="@+id/actual_zs_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/back" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/zs_add_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:scaleType="fitStart"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/ic_increase" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/num_reduce_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:scaleType="fitEnd"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_reduce" />
+
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@mipmap/circle_edit"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+
+                                <EditText
+                                    android:id="@+id/actual_num_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/back" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/num_add_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:scaleType="fitStart"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/ic_increase" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/color26"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="盘点库存"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/back"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:textSize="15sp"
+                            android:text="瓶"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/memo_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/back"
+                    android:gravity="top"
+                    android:hint="请输入货品摘要"
+                    android:maxLines="10"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="20dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sub_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_my_style16_3"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>
