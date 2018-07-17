@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color2"
+        android:layout_weight="1"
+        android:layout_below="@+id/title"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/re_blackground"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/title_conetnt"
+                layout="@layout/title_library" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="复核详情"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_marginTop="-30dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/order_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="出库单号："
+                android:textColor="@color/back"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tiji_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="CM³/"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/back"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/tiji_text"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="体积"
+                        android:gravity="left"
+                        android:textColor="@color/color26"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/plan_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="/"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="2.2"
+                        android:textColor="@color/back"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/plan_num_text"
+                        android:layout_marginLeft="5dp"
+                        android:text="已出库总数"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:textColor="@color/color26"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/zl_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="KG/"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1.9"
+                        android:textColor="@color/back"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/zl_text"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="重量"
+                        android:layout_weight="1"
+                        android:textColor="@color/color26"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/no_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="/"
+                        android:layout_weight="2.2"
+                        android:textColor="@color/back"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/no_num_text"
+                        android:text="待拣货数量"
+                        android:layout_weight="1"
+                        android:textColor="@color/color26"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/picking_goods_detail_recyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-15dp"/>
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/empty" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="暂无相关信息" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.whmaster.tl.whmaster.widget.SlideView
+        android:id="@+id/sub_btn"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_my_style16"
+        app:lock_drawable="@drawable/ic_slipright"
+        android:layout_alignParentBottom="true"
+        app:lock_radius="30dp"
+        app:lock_tips_tx="右滑完成复核"
+        app:lock_tips_tx_color="#ffffff"
+        app:locl_tips_tx_size="16sp"
+        app:lock_success="完成复核任务"
+        />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon02"/>
+            <TextView
+                android:id="@+id/library_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/back"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.9"
+                android:layout_gravity="center_vertical"
+                android:text="库位编码："/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color18"/>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/scan_recy_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.jcodecraeer.xrecyclerview.XRecyclerView>
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/empty" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="暂无相关信息" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

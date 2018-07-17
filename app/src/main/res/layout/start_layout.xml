@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@mipmap/screen"/>
+</LinearLayout>

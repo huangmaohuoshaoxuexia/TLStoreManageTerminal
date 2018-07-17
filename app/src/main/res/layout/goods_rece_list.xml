@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4.5"
+            android:scaleType="fitStart"
+            android:src="@mipmap/icon01" />
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/back"
+            android:text="入库订单编号："
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4.5"
+            android:scaleType="fitEnd"
+            android:src="@mipmap/right_btn" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/the_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="货主："
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/product_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="货品数量："
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color2" />
+</LinearLayout>

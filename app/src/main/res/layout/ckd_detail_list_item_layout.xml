@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/back"
+        android:text="货品名称：枫溪梧桐干红葡萄酒"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/order_sku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/back"
+        android:layout_marginTop="10dp"
+        android:text="SKU：8454985445"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/back"
+        android:layout_marginTop="10dp"
+        android:text="货品数量：45154瓶"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="体积：3.5㎡"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/back"
+            android:text="重量：5443kg"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color18" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="库位：A15"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/back"
+            android:text="库区：15411"/>
+    </LinearLayout>
+</LinearLayout>

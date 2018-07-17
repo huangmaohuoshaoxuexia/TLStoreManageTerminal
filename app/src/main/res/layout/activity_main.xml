@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/main_recyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_head_layout"
+            android:layout_marginTop="-20dp"
+            android:background="@color/white"
+            android:padding="10dp" />
+        <LinearLayout
+            android:id="@+id/main_head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/background_1"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="2"
+                android:src="@mipmap/head_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="请登录"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/zx_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_my_style7"
+                    android:text="注销"
+                    android:textColor="@color/color23"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

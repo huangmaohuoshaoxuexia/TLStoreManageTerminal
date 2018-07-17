@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_search" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color2"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/re_blackground"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="120dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/left_white"
+                android:scaleType="fitStart"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:gravity="right|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="拣货单"/>
+
+    </LinearLayout>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/picking_list_recyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-45dp"/>
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/empty" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="暂无相关信息" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

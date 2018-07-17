@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color2"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/rkd_sc_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_my_style8"
+            android:text="上架单生成"/>
+
+        <TextView
+            android:id="@+id/rk_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color16"
+            android:background="@drawable/bg_my_style1"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="入库"/>
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_my_style1"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="请扫描条码或输入订单编号"
+                android:paddingLeft="10dp"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/x_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@mipmap/x_png"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/search_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color2">
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/rkd_recyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.jcodecraeer.xrecyclerview.XRecyclerView>
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/empty" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="暂无相关信息" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

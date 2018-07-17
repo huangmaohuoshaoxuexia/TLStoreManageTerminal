@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="货品名称："
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/back"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/product_sku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="SKU："
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/back"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/number_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="批次号："
+            android:textColor="@color/back"
+            android:textSize="15sp" />
+        android:textSize="14sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/back"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="体积：3.5㎡"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/back"
+                android:text="重量：5443kg"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/library_qu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bg_my_style1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="库区："/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_my_style1"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="计划入库整数"/>
+                    <TextView
+                        android:id="@+id/plan_zs_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="0"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="实际入库整数"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_my_style4"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:id="@+id/left_reduce_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/reduce" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color18" />
+
+                        <EditText
+                            android:id="@+id/left_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:inputType="number"
+                            android:background="@null"
+                            android:textColor="@color/red" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color18" />
+
+                        <ImageView
+                            android:id="@+id/left_add_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/add" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/library_wei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bg_my_style1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="库位："/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_my_style1"
+
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="计划入库零散数"/>
+                    <TextView
+                        android:id="@+id/plan_num_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="0"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:padding="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="实际入库零散数"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_my_style4"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:id="@+id/right_reduce_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/reduce" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color18" />
+
+                        <EditText
+                            android:id="@+id/right_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:inputType="number"
+                            android:background="@null"
+                            android:textColor="@color/red" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color18" />
+
+                        <ImageView
+                            android:id="@+id/right_add_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/add" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.whmaster.tl.whmaster.widget.SlideView
+        android:id="@+id/sub_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@drawable/bg_selector_style1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:lock_drawable="@drawable/lock_icon_02"
+        app:lock_radius="30dp"
+        app:lock_tips_tx="滑动解锁"
+        app:lock_tips_tx_color="#ffffff"
+        app:locl_tips_tx_size="18sp"
+        />
+</LinearLayout>

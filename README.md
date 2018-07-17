@@ -1,2 +1,1 @@
-# TLStoreManageTerminal
-Android仓库管理手持应用APP
+# whmaster

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/bg_layout"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/log_load_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:background="@color/color2"
+        android:layout_centerInParent="true">
+    <ProgressBar
+        android:id="@+id/loadmore_default_footer_progressbar"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:indeterminateDrawable="@drawable/progressbar_rotate"/>
+
+    <TextView
+        android:id="@+id/login_ing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在登录"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/loadmore_default_footer_progressbar"
+        android:textColor="@color/color9"
+        android:textSize="14sp" />
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="四川祥瑞星贸有限公司"
+        android:textColor="@color/back"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/already_num_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="出库订单："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/no_num_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="出库数量："
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_state"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_weight="4"
+                android:background="@mipmap/bg_red"
+                android:text="未执行"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="体积：3.5㎡"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/back"
+            android:text="重量：5443 kg"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color2" />
+</LinearLayout>

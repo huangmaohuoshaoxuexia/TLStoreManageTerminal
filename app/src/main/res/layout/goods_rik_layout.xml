@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_back_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+
+        <TextView
+            android:id="@+id/rkd_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="入库订单编号："
+            android:singleLine="true"
+            android:textColor="@color/back"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color2" />
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color2"
+            android:orientation="vertical">
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/goods_rik_rcview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/sub_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@drawable/bg_selector_style1"
+                android:text="确认收货"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/empty" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="暂无相关信息" />
+
+    </LinearLayout>
+
+</LinearLayout>
