@@ -28,6 +28,7 @@ public class CancelCodePresenter extends BasePresenter implements CancelCodeInte
     public void updateBatchByCaseCode(String list) {
         Map map = new HashMap();
         map.put("list",list);
+
         RetrofitHttp.getInstance(mContext).post(Constants.updateBatchByCaseCode, map, new Subscriber<String>() {
             @Override
             public void onCompleted() {

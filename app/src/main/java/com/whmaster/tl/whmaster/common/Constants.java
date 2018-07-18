@@ -1,6 +1,6 @@
 package com.whmaster.tl.whmaster.common;
 
-
+import com.whmaster.tl.whmaster.BuildConfig;
 import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
 
@@ -25,9 +25,11 @@ import java.util.Iterator;
  * Created by Administrator on 2016/9/7.
  */
 public class Constants {
-    public static final String apiHead = "http://api.dev.tianlu56.com.cn/";//开发环境
-  //  public static final String apiHead = "http://api.local.tianlu56.com.cn/";//测试环境
-    //   public static final String apiHead = "https://wmsapi.tianlu56.com.cn/";//生产环境
+    public static final String apiHead = BuildConfig.API_HOST;//开发环境
+    //public static final String apiHead = "http://api.dev.tianlu56.com.cn/";//开发环境
+   // public static final String apiHead = "http://api.fat.tianlu56.com.cn/";//测试环境
+   // public static final String apiHead = "http://api.local.tianlu56.com.cn/";//测试环境
+    //  public static final String apiHead = "https://wmsapi.tianlu56.com.cn/";//生产环境
     public static String token = "", mUsername = "", mPwd = "";
     //登陆
 //    public static final String login = apiHead + "sys/sys/loginApp";
