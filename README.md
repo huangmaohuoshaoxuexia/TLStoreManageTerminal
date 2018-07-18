@@ -6,9 +6,9 @@
 
 ### todoList
 #### 2018.7.16-2018.7.20
-1.gradle 升级为3.1.3
-2.密钥更换 key alias:storeterminal 密码：123456
-3.打包环境配置  Build Variants 可以直接选择环境
+1. gradle 升级为3.1.3
+2. 密钥更换 key alias:storeterminal 密码：123456
+3. 打包环境配置  Build Variants 可以直接选择环境
 
 ### 版本说明
 
